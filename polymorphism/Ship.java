@@ -11,7 +11,7 @@ public class Ship {
         return this.name;
     }
 
-    public String yearBuilt() {
+    public String getYearBuilt() {
         return this.yearBuilt;
     }
 
