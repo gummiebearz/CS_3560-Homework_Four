@@ -14,7 +14,7 @@ public class Tester {
             // Invalid Freelancers
             payables.add(new Freelancer("Jordan", "Lee", -20.00, 30));
 
-        } catch(Exception ex) {
+        } catch(IllegalArgumentException ex) {
             System.err.println(ex.getMessage());
         }
 
@@ -22,7 +22,7 @@ public class Tester {
             // Invalid Freelancers
             payables.add(new Freelancer("Sofia", "Martinez", 25.00, -5));
 
-        } catch(Exception ex) {
+        } catch(IllegalArgumentException ex) {
             System.err.println(ex.getMessage());
         }
 

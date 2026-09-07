@@ -67,7 +67,7 @@ public class Freelancer implements Payable {
 
     @Override
     public String getPayeeName() {
-        return firstName + ", " + lastName;
+        return firstName + " " + lastName;
     }
 
     public void print() {
