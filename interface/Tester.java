@@ -42,7 +42,7 @@ public class Tester {
                 "Metro Printing",
                 "INV-1003",
                 -450.00
-        ));
+            ));
         } catch (IllegalArgumentException ex) {
             System.err.println(ex.getMessage());
         }
