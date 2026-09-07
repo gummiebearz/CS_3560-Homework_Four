@@ -1,12 +1,15 @@
 public class Course {
   private String name;
-  private Instructor instructor;
-  private Textbook textbook;
+  private Instructor[] instructors;
+  private Textbook[] textbooks;
 
-  public Course(String name, Instructor instructor, Textbook textbook) {
+  // private Instructor instructor;
+  // private Textbook textbook;
+
+  public Course(String name, Instructor[] instructors, Textbook[] textbooks) {
     this.name = name;
-    this.instructor = instructor;
-    this.textbook = textbook;
+    this.instructors = instructors;
+    this.textbooks = textbooks;
   }
 
   public String getName() {
@@ -19,9 +22,14 @@ public class Course {
 
   public void print() {
     System.out.println("Course name: " + this.name);
-    System.out.println(
-        "Instructor name: " + instructor.getFirstName() + " " + instructor.getLastName());
-    System.out.println(
-        "Textbook title: " + textbook.getTitle() + ", authored by " + textbook.getAuthor());
+    for (Instructor instructor : this.instructors) {
+      System.out.println(
+          "Instructor: " + instructor.getFirstName() + " " + instructor.getLastName());
+    }
+
+    for (Textbook textbook : this.textbooks) {
+      System.out.println(
+          "Textbook: " + textbook.getTitle() + ", authored by " + textbook.getAuthor());
+    }
   }
 }
