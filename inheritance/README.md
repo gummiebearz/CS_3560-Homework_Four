@@ -15,6 +15,8 @@ Mary Quinn [333-33-3333]
 Nicole Dior [444-44-4444]
     -> Commission Rate: 15%
     -> Gross Sales: $50000
+Renwa Chanel [555-55-5555]
+    -> Weekly salary: $1700
 Mike Davenport [666-66-6666]
     -> Base Salary: $95000
 Mahnaz Vaziri [777-77-7777]
