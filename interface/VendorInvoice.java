@@ -46,6 +46,7 @@ public class VendorInvoice implements Payable {
         return vendorName;
     }
 
+    @Override
     public void print() {
         System.out.println(getPayeeName());
         System.out.printf("    -> Payment: $%.2f\n", calculatePayment());
