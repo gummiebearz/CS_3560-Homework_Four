@@ -8,7 +8,7 @@
 ## Features
 
 - Supports code reusability and flexibility
-- Helps achive multiple inheritance-like Java
+- Helps achieve some flexibility similar to multiple inheritance through composition
 - Improves testability and maintainability of classes
 - Allows replacing or modifying member objects
 - Enables dynamic behavior changes at runtime
