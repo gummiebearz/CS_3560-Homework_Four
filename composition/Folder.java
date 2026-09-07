@@ -78,7 +78,8 @@ public class Folder {
   public void print(int numSpaces) {
     // Check for files in current folder
     for (File file : this.files) {
-      System.out.printf("%" + numSpaces + "s|-%s\n", "", file.getFileName());
+      System.out.printf("%" + numSpaces + "s|-", "");
+      file.print();
     }
 
     // Check for subfolders in current folder
