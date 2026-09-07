@@ -22,19 +22,19 @@ public class Tester {
     }
 
     // Print out the php_demo1 structure
-    System.out.println("\n ORIGINAL FOLDER STRUCTURE:");
+    System.out.println("ORIGINAL FOLDER STRUCTURE:");
     int numSpaces = 1;
     System.out.println(phpDemo1.getFolderName());
     phpDemo1.print(numSpaces);
 
     // Remove folder "app"
-    System.out.println("\n REMOVING FOLDER \"APP\":");
+    System.out.println("\nREMOVING FOLDER \"APP\":");
     sourceFilesFolder.removeSubfolder("app");
     System.out.println(phpDemo1.getFolderName());
     phpDemo1.print(numSpaces);
 
     // Removing folder "public"
-    System.out.println("\n REMOVING FOLDER \"PUBLIC\":");
+    System.out.println("\nREMOVING FOLDER \"PUBLIC\":");
     sourceFilesFolder.removeSubfolder("public");
     System.out.println(phpDemo1.getFolderName());
     phpDemo1.print(numSpaces);
