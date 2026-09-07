@@ -1,8 +1,14 @@
 # Inheritance - "IS A" Relationship
 
-The superclass constructor is invoked inside the subclass constructor
+- The superclass constructor is invoked inside the subclass constructor
+- "Is-A" relationsuip is tightly coupled, meaning one change in one class will affect another one
+- One class is a __specialized__ version of another class
 
-Output:
+## Advantages of "Is-A" relationship:
+- Code reusability
+- Reduce redundancy
+
+## Program Output:
 ```
 Joe Jones [111-11-1111]
     -> Weekly salary: $2500
