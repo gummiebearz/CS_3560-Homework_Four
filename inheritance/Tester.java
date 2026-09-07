@@ -1,4 +1,4 @@
-public class Inheritance {
+public class Tester {
     public static void main(String[] args) {
         SalariedEmployee salEmp1 = new SalariedEmployee("Joe", "Jones", "111-11-1111", 2500);
         salEmp1.display();
