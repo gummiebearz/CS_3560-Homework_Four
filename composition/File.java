@@ -12,4 +12,8 @@ public class File {
   public void setFileName(String fileName) {
     this.fileName = fileName;
   }
+
+  public void print() {
+    System.out.println(this.fileName);
+  }
 }
