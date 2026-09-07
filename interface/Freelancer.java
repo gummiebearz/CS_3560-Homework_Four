@@ -51,6 +51,7 @@ public class Freelancer implements Payable {
         hoursWorked = newHoursWorked;
     }
 
+    @Override
     public double calculatePayment() {
         double payment = 0;
 
