@@ -31,7 +31,7 @@ public class VendorInvoice implements Payable {
 
     public void setAmountDue(double newAmountDue) {
         if(newAmountDue < 0) {
-            throw IllegalArgumentException("Amount due must be non-negative");
+            throw new IllegalArgumentException("Amount due must be non-negative");
         }
         amountDue = newAmountDue;
     }
@@ -44,5 +44,10 @@ public class VendorInvoice implements Payable {
     @Override
     public String getPayeeName() {
         return vendorName;
+    }
+
+    public void print() {
+        System.out.println(getPayeeName());
+        System.out.printf("    -> Payment: $%.2f\n", calculatePayment());
     }
 }
