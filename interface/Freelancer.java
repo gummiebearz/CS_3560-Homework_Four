@@ -7,8 +7,8 @@ public class Freelancer implements Payable {
     public Freelancer(String newFirstName, String newLastName, double newHourlyRate, double newHoursWorked) {
         firstName = newFirstName;
         lastName = newLastName;
-        hourlyRate = newHourlyRate > 0 ? newHourlyRate : 0;
-        hoursWorked = newHoursWorked > 0 ? newHoursWorked: 0;
+        setHourlyRate(newHourlyRate);
+        setHoursWorked(newHoursWorked);
     }
 
     public String getFirstName() {
@@ -65,6 +65,7 @@ public class Freelancer implements Payable {
         return payment;
     }
 
+    @Override
     public String getPayeeName() {
         return firstName + ", " + lastName;
     }
