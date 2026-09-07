@@ -1,8 +1,8 @@
 public class HourlyEmployee extends Employee {
     private double wage;
-    private int hoursWorked;
+    private double hoursWorked;
 
-    public HourlyEmployee(String newFirstName, String newLastName, String newSocialSecurity, double newWage, int newHoursWorked) {
+    public HourlyEmployee(String newFirstName, String newLastName, String newSocialSecurity, double newWage, double newHoursWorked) {
         super(newFirstName, newLastName, newSocialSecurity);
         wage = newWage;
         hoursWorked = newHoursWorked;
@@ -12,7 +12,7 @@ public class HourlyEmployee extends Employee {
         return wage;
     }
 
-    public int getHoursWorked() {
+    public double getHoursWorked() {
         return hoursWorked;
     }
 
@@ -20,13 +20,13 @@ public class HourlyEmployee extends Employee {
         wage = newWage;
     }
 
-    public void setHoursWorked(int newHoursWorked) {
+    public void setHoursWorked(double newHoursWorked) {
         hoursWorked = newHoursWorked;
     }
 
     public void display() {
         super.display();
         System.out.printf("    -> Hourly Wage: $%.0f\n", wage);
-        System.out.println("    -> Hours Worked: " + hoursWorked);
+        System.out.printf("    -> Hours Worked: %.0f\n", hoursWorked);
     }
 }
