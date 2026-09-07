@@ -1,6 +1,6 @@
 # Aggregation - "Has-A" Relationship
 
-"Has-A" relationship is a special form of Assocation where:
+"Has-A" relationship is a special form of Association where:
 - In Aggregation, both entries can survive individually, meaning when one gets destroyed the other one remains unaffected
 - Weak association
 - Child objects can exist independently of the parent object (The __contained object__ can exist independently of the __container object__)

@@ -15,7 +15,7 @@ public class Tester {
 
     Textbook[] textbooks = new Textbook[2];
     textbooks[0] = new Textbook("Clean Code", "Robert C. Martin", "Prentice Hall");
-    textbooks[1] = new Textbook("Effective Java", "Joshua Bloch", "Addision-Wesley");
+    textbooks[1] = new Textbook("Effective Java", "Joshua Bloch", "Addison-Wesley");
 
     Course course = new Course("CS3560", instructors, textbooks);
     course.print();
