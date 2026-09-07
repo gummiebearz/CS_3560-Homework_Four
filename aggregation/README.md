@@ -7,7 +7,15 @@
 
 ## Program Output
 ```
+// One Instructor and One Textbook
 Course name: CS3560
 Instructor name: Nima Davarpanah
 Textbook title: Clean Code, authored by Robert C. Martin
+
+// Two Instructors and Two Textbooks
+Course name: CS3560
+Instructor: Nima Davarpanah
+Instructor: Sarah Johnson
+Textbook: Clean Code, authored by Robert C. Martin
+Textbook: Effective Java, authored by Joshua Bloch
 ```
