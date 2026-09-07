@@ -5,8 +5,8 @@ public class Folder {
   private ArrayList<File> files;
   private ArrayList<Folder> subfolders;
 
-  public Folder(String name) {
-    this.name = name;
+  public Folder(String folderName) {
+    this.folderName = folderName;
     this.files = new ArrayList<File>();
     this.subfolders = new ArrayList<Folder>();
   }
@@ -15,12 +15,12 @@ public class Folder {
     return this.folderName;
   }
 
-  public void setFolerName(String folderName) {
+  public void setFolderName(String folderName) {
     this.folderName = folderName;
   }
 
   public void addFile(String filename) {
-    this.files.append(new File(filename));
+    this.files.add(new File(filename));
   }
 
   public void removeFile(String fileToRemove) {
@@ -35,7 +35,7 @@ public class Folder {
   }
 
   public void addSubfolder(String foldername) {
-    this.subfolders.append(new Folder(folderName));
+    this.subfolders.add(new Folder(folderName));
   }
 
   public void removeSubfolder(String folderToRemove) {

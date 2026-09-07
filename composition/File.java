@@ -5,11 +5,11 @@ public class File {
     this.fileName = fileName;
   }
 
-  public String getfileName() {
+  public String getFileName() {
     return this.fileName;
   }
 
-  public void setfileName(String fileName) {
+  public void setFileName(String fileName) {
     this.fileName = fileName;
   }
 }
