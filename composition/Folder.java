@@ -19,8 +19,21 @@ public class Folder {
     this.folderName = folderName;
   }
 
-  public void addFile(String filename) {
-    this.files.add(new File(filename));
+  public File addFile(String fileName) {
+    File newFile = new File(fileName);
+    this.files.add(newFile);
+
+    return newFile;
+  }
+
+  public File getFile(String fileName) {
+    for (File file : this.files) {
+      if (file.getFileName().equals(fileName)) {
+        return file;
+      }
+    }
+
+    return null;
   }
 
   public void removeFile(String fileToRemove) {
@@ -34,8 +47,21 @@ public class Folder {
     this.files.removeIf(file -> file.getFileName().equals(fileToRemove));
   }
 
-  public void addSubfolder(String foldername) {
-    this.subfolders.add(new Folder(folderName));
+  public Folder addSubfolder(String folderName) {
+    Folder newSubfolder = new Folder(folderName);
+    this.subfolders.add(newSubfolder);
+
+    return newSubfolder;
+  }
+
+  public Folder getSubfolder(String folderName) {
+    for (Folder folder : this.subfolders) {
+      if (folder.getFolderName().equals(folderName)) {
+        return folder;
+      }
+    }
+
+    return null;
   }
 
   public void removeSubfolder(String folderToRemove) {
