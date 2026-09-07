@@ -13,6 +13,7 @@ public class Inheritance {
         comEmp1.display();
 
         SalariedEmployee salEmp2 = new SalariedEmployee("Renwa", "Chanel", "555-55-5555", 1700);
+        salEmp2.display();
 
         BaseEmployee baseEmp = new BaseEmployee("Mike", "Davenport", "666-66-6666", 95000);
         baseEmp.display();
