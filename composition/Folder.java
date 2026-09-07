@@ -31,7 +31,7 @@ public class Folder {
         break;
       }
     } */
-    this.files.removeIf(file -> file.getName().equals(fileToRemove));
+    this.files.removeIf(file -> file.getFileName().equals(fileToRemove));
   }
 
   public void addSubfolder(String foldername) {
@@ -46,7 +46,7 @@ public class Folder {
         break;
       }
     } */
-    this.subfolders.removeIf(subfolder -> subfolder.getName().equals(folderToRemove));
+    this.subfolders.removeIf(subfolder -> subfolder.getFolderName().equals(folderToRemove));
   }
 
   public void print(int numSpaces) {
