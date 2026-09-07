@@ -18,8 +18,6 @@
 `ArrayList<>` is preferred over fixed arrays because a folder can contain zero or more files or sub-folders, suggesting dynamic collection.
 
 ```
-
-
  ORIGINAL FOLDER STRUCTURE:
 php_demo1
  |-Source Files
