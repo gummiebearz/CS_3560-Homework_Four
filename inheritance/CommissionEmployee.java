@@ -16,7 +16,7 @@ public class CommissionEmployee extends Employee {
         return grossSales;
     }
 
-    public void setcommissionRate(double newCommissionRate) {
+    public void setCommissionRate(double newCommissionRate) {
         commissionRate = newCommissionRate;
     }
 
