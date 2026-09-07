@@ -52,15 +52,14 @@ public class Folder {
   public void print(int numSpaces) {
     // Check for files in current folder
     for (File file : this.files) {
-      System.out.printf("%" + numSpaces + "s|%s", file.getFileName());
+      System.out.printf("%" + numSpaces + "s|-%s\n", "", file.getFileName());
     }
 
     // Check for subfolders in current folder
     for (Folder subfolder : this.subfolders) {
-      System.out.printf("%" + numSpaces + "s|%s", subfolder.getFolderName());
-      if (subfolder.size() > 0) {
-        subfolder.print(numSpaces + 1);
-      }
+      System.out.printf("%" + numSpaces + "s|-%s\n", "", subfolder.getFolderName());
+      // Recursively print files and subfolders inside the current subfolder
+      subfolder.print(numSpaces + 2);
     }
   }
 }
