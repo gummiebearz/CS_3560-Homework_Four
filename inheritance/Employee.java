@@ -35,6 +35,6 @@ public class Employee {
     }
 
     public void display() {
-        System.out.println(firstName + " " + lastName + " - " + socialSecurity);
+        System.out.println(firstName + " " + lastName + " [" + socialSecurity + "]");
     }
 }

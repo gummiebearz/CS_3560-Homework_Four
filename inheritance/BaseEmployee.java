@@ -6,6 +6,14 @@ public class BaseEmployee extends Employee {
         baseSalary = newBaseSalary;
     }
 
+    public double getBaseSalary() {
+        return baseSalary;
+    }
+
+    public void setBaseSalary(double newBaseSalary) {
+        baseSalary = newBaseSalary;
+    }
+
     public void display() {
         super.display();
         System.out.printf("    -> Base Salary: $%.0f\n", baseSalary);
