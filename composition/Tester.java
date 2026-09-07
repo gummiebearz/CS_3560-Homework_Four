@@ -1,11 +1,9 @@
 public class Tester {
   public static void main(String[] args) {
     Folder phpDemo1 = new Folder("php_demo1");
+    Folder sourceFilesFolder = phpDemo1.addSubfolder("Source Files");
 
-    // Add files and subfolders to "Source Files"
-    Folder sourceFilesFolder = new Folder("Source Files");
-
-    // Subfolders inside "Source Files"
+    // Subfolders to "Source Files"
     sourceFilesFolder.addSubfolder(".phalcon");
     Folder appFolder = sourceFilesFolder.addSubfolder("app");
     sourceFilesFolder.addSubfolder("cache");
@@ -18,12 +16,27 @@ public class Tester {
     }
 
     // Files inside "Source Files/public"
-    String[] publicFiles = {".htaccess", ".hrouter.php", "index.html"};
+    String[] publicFiles = {".htaccess", ".htrouter.php", "index.html"};
     for (String name : publicFiles) {
       publicFolder.addFile(name);
     }
 
-    int numSpaces = 0;
+    // Print out the php_demo1 structure
+    System.out.println("\n ORIGINAL FOLDER STRUCTURE:");
+    int numSpaces = 1;
+    System.out.println(phpDemo1.getFolderName());
+    phpDemo1.print(numSpaces);
+
+    // Remove folder "app"
+    System.out.println("\n REMOVING FOLDER \"APP\":");
+    sourceFilesFolder.removeSubfolder("app");
+    System.out.println(phpDemo1.getFolderName());
+    phpDemo1.print(numSpaces);
+
+    // Removing folder "public"
+    System.out.println("\n REMOVING FOLDER \"PUBLIC\":");
+    sourceFilesFolder.removeSubfolder("public");
+    System.out.println(phpDemo1.getFolderName());
     phpDemo1.print(numSpaces);
   }
 }
