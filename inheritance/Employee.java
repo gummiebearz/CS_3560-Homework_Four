@@ -1,40 +1,39 @@
-
 public class Employee {
-    private String firstName;
-    private String lastName;
-    private String socialSecurity;
+  private String firstName;
+  private String lastName;
+  private String socialSecurity;
 
-    public Employee(String newFirstName, String newLastName, String newSocialSecurity) {
-        firstName = newFirstName;
-        lastName = newLastName;
-        socialSecurity = newSocialSecurity;
-    }
+  public Employee(String firstName, String lastName, String socialSecurity) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.socialSecurity = socialSecurity;
+  }
 
-    public String getFirstName() {
-        return firstName;
-    }
+  public String getFirstName() {
+    return this.firstName;
+  }
 
-    public String getLastName() {
-        return lastName;
-    }
+  public String getLastName() {
+    return this.lastName;
+  }
 
-    public String getSocialSecurity() {
-        return socialSecurity;
-    }
+  public String getSocialSecurity() {
+    return this.socialSecurity;
+  }
 
-    public void setFirstName(String newFirstName) {
-        firstName = newFirstName;
-    }
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
+  }
 
-    public void setLastName(String newLastName) {
-        lastName = newLastName;
-    }
+  public void setLastName(String lastName) {
+    this.lastName = lastName;
+  }
 
-    public void setSocialSecurity(String newSocialSecurity) {
-        socialSecurity = newSocialSecurity;
-    }
+  public void setSocialSecurity(String socialSecurity) {
+    this.socialSecurity = socialSecurity;
+  }
 
-    public void display() {
-        System.out.println(firstName + " " + lastName + " [" + socialSecurity + "]");
-    }
+  public void display() {
+    System.out.println(this.firstName + " " + this.lastName + " [" + this.socialSecurity + "]");
+  }
 }

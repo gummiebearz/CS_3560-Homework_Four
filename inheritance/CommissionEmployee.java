@@ -1,32 +1,37 @@
 public class CommissionEmployee extends Employee {
-    private double commissionRate;
-    private double grossSales; 
+  private double commissionRate;
+  private double grossSales;
 
-    public CommissionEmployee(String newFirstName, String newLastName, String newSocialSecurity, double newCommissionRate, double newGrossSales) {
-        super(newFirstName, newLastName, newSocialSecurity);
-        commissionRate = newCommissionRate;
-        grossSales = newGrossSales;
-    }
+  public CommissionEmployee(
+      String firstName,
+      String lastName,
+      String socialSecurity,
+      double commissionRate,
+      double grossSales) {
+    super(firstName, lastName, socialSecurity);
+    this.commissionRate = commissionRate;
+    this.grossSales = grossSales;
+  }
 
-    public double getCommissionRate() {
-        return commissionRate;
-    }
+  public double getCommissionRate() {
+    return this.commissionRate;
+  }
 
-    public double getGrossSales() {
-        return grossSales;
-    }
+  public double getGrossSales() {
+    return this.grossSales;
+  }
 
-    public void setCommissionRate(double newCommissionRate) {
-        commissionRate = newCommissionRate;
-    }
+  public void setCommissionRate(double commissionRate) {
+    this.commissionRate = commissionRate;
+  }
 
-    public void setGrossSales(double newGrossSales) {
-        grossSales = newGrossSales;
-    }
+  public void setGrossSales(double grossSales) {
+    this.grossSales = grossSales;
+  }
 
-    public void display() {
-        super.display();
-        System.out.printf("    -> Commission Rate: %.0f%%\n", commissionRate * 100);
-        System.out.printf("    -> Gross Sales: $%.0f\n", grossSales);
-    }
+  public void display() {
+    super.display();
+    System.out.printf("    -> Commission Rate: %.0f%%\n", this.commissionRate * 100);
+    System.out.printf("    -> Gross Sales: $%.0f\n", this.grossSales);
+  }
 }

@@ -1,32 +1,33 @@
 public class HourlyEmployee extends Employee {
-    private double wage;
-    private double hoursWorked;
+  private double wage;
+  private double hoursWorked;
 
-    public HourlyEmployee(String newFirstName, String newLastName, String newSocialSecurity, double newWage, double newHoursWorked) {
-        super(newFirstName, newLastName, newSocialSecurity);
-        wage = newWage;
-        hoursWorked = newHoursWorked;
-    }
+  public HourlyEmployee(
+      String firstName, String lastName, String socialSecurity, double wage, double hoursWorked) {
+    super(firstName, lastName, socialSecurity);
+    this.wage = wage;
+    this.hoursWorked = hoursWorked;
+  }
 
-    public double getHourlyWage() {
-        return wage;
-    }
+  public double getHourlyWage() {
+    return this.wage;
+  }
 
-    public double getHoursWorked() {
-        return hoursWorked;
-    }
+  public double getHoursWorked() {
+    return this.hoursWorked;
+  }
 
-    public void setHourlyWage(double newWage) {
-        wage = newWage;
-    }
+  public void setHourlyWage(double wage) {
+    this.wage = wage;
+  }
 
-    public void setHoursWorked(double newHoursWorked) {
-        hoursWorked = newHoursWorked;
-    }
+  public void setHoursWorked(double hoursWorked) {
+    this.hoursWorked = hoursWorked;
+  }
 
-    public void display() {
-        super.display();
-        System.out.printf("    -> Hourly Wage: $%.0f\n", wage);
-        System.out.printf("    -> Hours Worked: %.0f\n", hoursWorked);
-    }
+  public void display() {
+    super.display();
+    System.out.printf("    -> Hourly Wage: $%.0f\n", this.wage);
+    System.out.printf("    -> Hours Worked: %.0f\n", this.hoursWorked);
+  }
 }
