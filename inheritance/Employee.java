@@ -34,6 +34,7 @@ public class Employee {
   }
 
   public void display() {
-    System.out.println(this.firstName + " " + this.lastName + " [" + this.socialSecurity + "]");
+    System.out.println("Name: " + this.firstName + " " + this.lastName);
+    System.out.println("SSN: " + this.socialSecurity);
   }
 }

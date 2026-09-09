@@ -16,7 +16,9 @@ public class SalariedEmployee extends Employee {
   }
 
   public void display() {
+    System.out.println("Salaried Employee:");
+    System.out.println("------------------");
     super.display();
-    System.out.printf("    -> Weekly salary: $%.0f\n", this.weeklySalary);
+    System.out.printf("Weekly salary: $%.0f\n", this.weeklySalary);
   }
 }

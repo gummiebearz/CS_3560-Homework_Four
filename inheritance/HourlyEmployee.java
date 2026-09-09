@@ -26,8 +26,10 @@ public class HourlyEmployee extends Employee {
   }
 
   public void display() {
+    System.out.println("Hourly Employee:");
+    System.out.println("----------------");
     super.display();
-    System.out.printf("    -> Hourly Wage: $%.0f\n", this.wage);
-    System.out.printf("    -> Hours Worked: %.0f\n", this.hoursWorked);
+    System.out.printf("Hourly Wage: $%.0f\n", this.wage);
+    System.out.printf("Hours Worked: %.0f\n", this.hoursWorked);
   }
 }

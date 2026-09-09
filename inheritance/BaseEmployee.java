@@ -15,7 +15,10 @@ public class BaseEmployee extends Employee {
   }
 
   public void display() {
+    System.out.println("Base Employee:");
+    System.out.println("--------------");
+
     super.display();
-    System.out.printf("    -> Base Salary: $%.0f\n", this.baseSalary);
+    System.out.printf("Base Salary: $%.0f\n", this.baseSalary);
   }
 }

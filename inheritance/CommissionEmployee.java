@@ -30,8 +30,11 @@ public class CommissionEmployee extends Employee {
   }
 
   public void display() {
+    System.out.println("Commission Employee:");
+    System.out.println("--------------------");
+
     super.display();
-    System.out.printf("    -> Commission Rate: %.0f%%\n", this.commissionRate * 100);
-    System.out.printf("    -> Gross Sales: $%.0f\n", this.grossSales);
+    System.out.printf("Commission Rate: %.0f%%\n", this.commissionRate * 100);
+    System.out.printf("Gross Sales: $%.0f\n", this.grossSales);
   }
 }
