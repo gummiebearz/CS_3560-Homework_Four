@@ -4,12 +4,28 @@
 - Allows same method to behave differently, achieved through method overloading and method overriding
 
 ## Advantages
+
 - Reusability
 - Maintainability
 
 ## Program Output
+
 ```
-Name: Astronomy - Built In: 1999
-Name: Princess - Max Passengers: 300
-Name: Zim Rotterdam - Cargo Capacity: 3000
+POLYMORPHISM EXERCISE
+=====================
+Ship:
+-----
+Name: Astronomy
+Year Built: 1999
+
+Cruise Ship:
+-----------
+Name: Princess
+Max Passengers: 300
+
+Cargo Ship:
+-----------
+Name: Zim Rotterdam
+Cargo Capacity: 3000
+
 ```

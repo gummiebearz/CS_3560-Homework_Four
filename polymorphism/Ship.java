@@ -1,29 +1,33 @@
 public class Ship {
-    private String name;
-    private String yearBuilt;
+  private String name;
+  private String yearBuilt;
 
-    public Ship(String name, String yearBuilt) {
-        this.name = name;
-        this.yearBuilt = yearBuilt;
-    }
+  public Ship(String name, String yearBuilt) {
+    this.name = name;
+    this.yearBuilt = yearBuilt;
+  }
 
-    public String getName() {
-        return this.name;
-    }
+  public String getName() {
+    return this.name;
+  }
 
-    public String getYearBuilt() {
-        return this.yearBuilt;
-    }
+  public String getYearBuilt() {
+    return this.yearBuilt;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setYearBuilt(String yearBuilt) {
-        this.yearBuilt = yearBuilt;
-    }
+  public void setYearBuilt(String yearBuilt) {
+    this.yearBuilt = yearBuilt;
+  }
 
-    public void print() {
-        System.out.println("Name: " + this.name + " - Built In: " + this.yearBuilt);
-    }
+  public void print() {
+    System.out.println("Ship:");
+    System.out.println("-----");
+
+    System.out.println("Name: " + this.name);
+    System.out.println("Year Built: " + this.yearBuilt);
+  }
 }

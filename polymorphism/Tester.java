@@ -1,13 +1,17 @@
 public class Tester {
-    public static void main(String[] args) {
-        Ship[] ships = new Ship[3];
+  public static void main(String[] args) {
+    System.out.println("POLYMORPHISM EXERCISE");
+    System.out.println("=====================");
 
-        ships[0] = new Ship("Astronomy", "1999");
-        ships[1] = new CruiseShip("Princess", "2009", 300);
-        ships[2] = new CargoShip("Zim Rotterdam", "2019", 3000);
+    Ship[] ships = new Ship[3];
 
-        for(Ship s : ships) {
-            s.print();
-        }
+    ships[0] = new Ship("Astronomy", "1999");
+    ships[1] = new CruiseShip("Princess", "2009", 300);
+    ships[2] = new CargoShip("Zim Rotterdam", "2019", 3000);
+
+    for (Ship s : ships) {
+      s.print();
+      System.out.println();
     }
+  }
 }
