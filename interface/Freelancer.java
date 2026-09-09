@@ -73,7 +73,10 @@ public class Freelancer implements Payable {
 
   @Override
   public void print() {
-    System.out.println(this.getPayeeName());
-    System.out.printf("    -> Payment: $%.2f\n", this.calculatePayment());
+    System.out.println("Freelancer:");
+    System.out.println("-----------");
+
+    System.out.println("Payee: " + this.firstName + " " + this.lastName);
+    System.out.printf("Payment: $%.2f\n", this.calculatePayment());
   }
 }
