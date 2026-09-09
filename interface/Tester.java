@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Tester {
   public static void main(String[] args) {
-    System.out.println("Interface Exercise");
+    System.out.println("INTERFACE EXERCISE");
     System.out.println("==================");
 
     ArrayList<Payable> payables = new ArrayList<>();

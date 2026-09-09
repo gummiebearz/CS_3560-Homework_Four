@@ -7,13 +7,8 @@ The `Payable` interface defines payment-related behaviors. Different classes suc
 ## Program Output
 
 ```
-Interface Exercise
+INTERFACE EXERCISE
 ==================
-Error adding Freelancer: Rate must be non-negative
-Error adding Freelancer: Hours worked must be non-negative
-Error adding Vendor Invoice: Amount due must be non-negative
-Error adding Vendor Invoice: Amount due must be non-negative
-
 Freelancer:
 -----------
 Payee: Alex Carter
@@ -37,4 +32,13 @@ Invoice Number: INV-1002
 Payment: $3480.00
 
 ===> Total Payout: $7152.75
+```
+
+### Program Error Output
+
+```
+Error adding Freelancer: Rate must be non-negative
+Error adding Freelancer: Hours worked must be non-negative
+Error adding Vendor Invoice: Amount due must be non-negative
+Error adding Vendor Invoice: Amount due must be non-negative
 ```
