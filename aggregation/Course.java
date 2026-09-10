@@ -3,9 +3,6 @@ public class Course {
   private Instructor[] instructors;
   private Textbook[] textbooks;
 
-  // private Instructor instructor;
-  // private Textbook textbook;
-
   public Course(String name, Instructor[] instructors, Textbook[] textbooks) {
     this.name = name;
     this.instructors = instructors;
@@ -21,15 +18,34 @@ public class Course {
   }
 
   public void print() {
-    System.out.println("Course name: " + this.name);
+    System.out.printf("Course: %s%n%n", this.name);
+
+    int noCounter = 0;
+
+    System.out.println("Instructor(s):");
     for (Instructor instructor : this.instructors) {
       System.out.println(
-          "Instructor: " + instructor.getFirstName() + " " + instructor.getLastName());
+          (noCounter + 1)
+              + ". Instructor: "
+              + instructor.getFirstName()
+              + " "
+              + instructor.getLastName());
+
+      System.out.println("   Office: " + instructor.getOfficeNumber());
+
+      noCounter++;
     }
 
+    System.out.println();
+    noCounter = 0;
+
+    System.out.println("Textbook(s):");
     for (Textbook textbook : this.textbooks) {
-      System.out.println(
-          "Textbook: " + textbook.getTitle() + ", authored by " + textbook.getAuthor());
+      System.out.println((noCounter + 1) + ". " + textbook.getTitle());
+      System.out.println("   Author: " + textbook.getAuthor());
+      System.out.println("   Publisher: " + textbook.getPublisher());
+
+      noCounter++;
     }
   }
 }
