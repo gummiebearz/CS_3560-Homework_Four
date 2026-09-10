@@ -75,7 +75,12 @@ public class Folder {
     this.subfolders.removeIf(subfolder -> subfolder.getFolderName().equals(folderToRemove));
   }
 
-  public void print(int numSpaces) {
+  public void print() {
+    System.out.println(this.folderName);
+    printHelper(2);
+  }
+
+  private void printHelper(int numSpaces) {
     // Check for files in current folder
     for (File file : this.files) {
       System.out.printf("%" + numSpaces + "s|-", "");
@@ -86,7 +91,7 @@ public class Folder {
     for (Folder subfolder : this.subfolders) {
       System.out.printf("%" + numSpaces + "s|-%s\n", "", subfolder.getFolderName());
       // Recursively print files and subfolders inside the current subfolder
-      subfolder.print(numSpaces + 2);
+      subfolder.printHelper(numSpaces + 2);
     }
   }
 }

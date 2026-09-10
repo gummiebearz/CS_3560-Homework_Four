@@ -18,36 +18,36 @@
 `ArrayList<>` is preferred over fixed arrays because a folder can contain zero or more files or sub-folders, suggesting dynamic collection.
 
 ```
- ORIGINAL FOLDER STRUCTURE:
+ORIGINAL FOLDER STRUCTURE:
 php_demo1
- |-Source Files
-   |-.phalcon
-   |-app
-     |-config
-     |-controllers
-     |-library
-     |-migrations
-     |-models
-     |-views
-   |-cache
-   |-public
-     |-.htaccess
-     |-.htrouter.php
-     |-index.html
+  |-Source Files
+    |-.phalcon
+    |-app
+      |-config
+      |-controllers
+      |-library
+      |-migrations
+      |-models
+      |-views
+    |-cache
+    |-public
+      |-.htaccess
+      |-.htrouter.php
+      |-index.html
 
- REMOVING FOLDER "APP":
+AFTER REMOVING FOLDER "APP":
 php_demo1
- |-Source Files
-   |-.phalcon
-   |-cache
-   |-public
-     |-.htaccess
-     |-.htrouter.php
-     |-index.html
+  |-Source Files
+    |-.phalcon
+    |-cache
+    |-public
+      |-.htaccess
+      |-.htrouter.php
+      |-index.html
 
- REMOVING FOLDER "PUBLIC":
+AFTER REMOVING FOLDER "PUBLIC":
 php_demo1
- |-Source Files
-   |-.phalcon
-   |-cache
+  |-Source Files
+    |-.phalcon
+    |-cache
 ```

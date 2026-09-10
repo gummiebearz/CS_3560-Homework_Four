@@ -23,20 +23,20 @@ public class Tester {
 
     // Print out the php_demo1 structure
     System.out.println("ORIGINAL FOLDER STRUCTURE:");
-    int numSpaces = 1;
-    System.out.println(phpDemo1.getFolderName());
-    phpDemo1.print(numSpaces);
+    /* int numSpaces = 1;
+    System.out.println(phpDemo1.getFolderName()); */
+    phpDemo1.print();
 
     // Remove folder "app"
-    System.out.println("\nREMOVING FOLDER \"APP\":");
+    System.out.println("\nAFTER REMOVING FOLDER \"APP\":");
     sourceFilesFolder.removeSubfolder("app");
-    System.out.println(phpDemo1.getFolderName());
-    phpDemo1.print(numSpaces);
+    // System.out.println(phpDemo1.getFolderName());
+    phpDemo1.print();
 
     // Removing folder "public"
-    System.out.println("\nREMOVING FOLDER \"PUBLIC\":");
+    System.out.println("\nAFTER REMOVING FOLDER \"PUBLIC\":");
     sourceFilesFolder.removeSubfolder("public");
-    System.out.println(phpDemo1.getFolderName());
-    phpDemo1.print(numSpaces);
+    // System.out.println(phpDemo1.getFolderName());
+    phpDemo1.print();
   }
 }
